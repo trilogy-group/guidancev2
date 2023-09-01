@@ -33,7 +33,7 @@ class GPTCache(Cache):
         put(key, value)
 
     def __contains__(self, key: str) -> bool:
-        return get(key) is not None
+        return False
 
     def create_key(self, llm: str, **kwargs: Dict[str, Any]) -> str:
         if "cache_key" in kwargs:

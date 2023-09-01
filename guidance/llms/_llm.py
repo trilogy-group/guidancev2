@@ -12,11 +12,11 @@ class LLMMeta(type):
     @property
     def cache(cls):
         if cls._cache is None:
-            cls._cache = DiskCache(cls.llm_name)
+            pass
         return cls._cache
     @cache.setter
     def cache(cls, value):
-        cls._cache = value
+        cls._cache = None
 
 class LLM(metaclass=LLMMeta):
     cache_version = 1
@@ -103,7 +103,7 @@ type {{function.name}} = (_: {
             return self.__class__.cache
     @cache.setter
     def cache(self, value):
-        self._cache = value
+        self._cache = None
 
 
 class LLMSession:
