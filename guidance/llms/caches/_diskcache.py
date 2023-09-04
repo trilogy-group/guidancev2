@@ -5,7 +5,7 @@ import platformdirs
 
 from guidance.llms.caches import Cache
 
-
+dict = {}
 class DiskCache(Cache):
     """DiskCache is a cache that uses diskcache lib."""
     def __init__(self, llm_name: str):
