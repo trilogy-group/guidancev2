@@ -1,3 +1,9 @@
+# DON'T SYNC THIS FORK
+
+Guidance has made breaking changes between v0 and v1. This branch contains a fork of v0 of guidance, with local fixes/improvements we need to use it in production.
+
+---
+
 <div align="right"><a href="https://guidance.readthedocs.org"><img src="https://readthedocs.org/projects/guidance/badge/?version=latest&style=flat" /></a></div>
 <div align="center"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/guidance_logo_blue_dark.svg">
